@@ -1,0 +1,21 @@
+CONST a=0.8;
+VAR b, bb:integer;
+aa:real;
+
+PROCEDURE s;
+VAR c:integer;
+    BEGIN
+        aa:=13.1
+    END;
+
+BEGIN
+    aa := a+a;
+    CALL s;
+    WHILE aa>10-3 DO
+    BEGIN
+        aa:= aa-1;
+        WRITE aa
+    END;
+    IF 5<3 THEN
+    WRITE 5
+END.

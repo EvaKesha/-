@@ -1,0 +1,91 @@
+{
+  "CONST": {
+    "a": 0.8
+  },
+  "VAR": {
+    "b": "int",
+    "bb": "int"
+  },
+  "PROCEDURES": {
+    "s": {
+      "VAR": {
+        "c": "int"
+      },
+      "BLOCK": {
+        "assign": {
+          "id": "aa",
+          "expression": {
+            "number": 13.1
+          }
+        }
+      }
+    }
+  },
+  "BLOCK": {
+    "assign": {
+      "id": "aa",
+      "expression": {
+        "left": {
+          "id": "a"
+        },
+        "right": {
+          "id": "a"
+        },
+        "op": "+"
+      }
+    },
+    "call": {
+      "id": "s"
+    },
+    "whiledo": {
+      "condition": {
+        "left": {
+          "id": "aa"
+        },
+        "right": {
+          "left": {
+            "number": 10
+          },
+          "right": {
+            "number": 3
+          },
+          "op": "-"
+        },
+        "op": ">"
+      },
+      "while_body": {
+        "assign": {
+          "id": "aa",
+          "expression": {
+            "left": {
+              "id": "aa"
+            },
+            "right": {
+              "number": 1
+            },
+            "op": "-"
+          }
+        },
+        "write": {
+          "id": "aa"
+        }
+      }
+    },
+    "ifthen": {
+      "condition": {
+        "left": {
+          "number": 5
+        },
+        "right": {
+          "number": 3
+        },
+        "op": "<"
+      },
+      "if_body": {
+        "write": {
+          "number": 5
+        }
+      }
+    }
+  }
+}
